@@ -1,16 +1,69 @@
-<div class="fade-in">
-  <c-card>
-    <c-card-header>
-      {{ title }}
-      <app-docs-link href="https://github.com/coreui/coreui-icons" text="GitHub"></app-docs-link>
-    </c-card-header>
-    <c-card-body>
-      <c-row class="text-center">
-        <c-col *ngFor="let icon of icons" class="mb-5" md="3" sm="4" xl="2" xs="6">
-          <svg cIcon [name]="icon[0]" [title]="icon[0]" size="3xl"></svg>
-          <div>{{ toKebabCase(icon[0]) }}</div>
-        </c-col>
-      </c-row>
-    </c-card-body>
-  </c-card>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    table tr{
+      align-items: center;
+    }
+
+  </style>
+  <title>funcionarios</title>
+
+</head>
+<body>
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+        <tr align="center">
+          <th>Id</th>
+          <th>Nome</th>
+          <th>Idade</th>
+          <th>Cargo</th>
+          <th>Email</th>
+          <th>Telefone</th>
+          <th>Acção</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr align="center">
+          <td>1</td>
+          <td>Pedro manuel joão</td>
+          <td>24</td>
+          <td>Secretario</td>
+          <td>ped12@gmail.com</td>
+          <td>912345678</td>
+          <td>
+            <button>Detalhes</button>
+          </td>
+        </tr>
+        <tr align="center">
+          <td>2</td>
+          <td>Manuel António</td>
+          <td>30</td>
+          <td>Programador</td>
+          <td>man123@gmail.com</td>
+          <td>923543219</td>
+          <td>
+            <button>Detalhes</button>
+          </td>
+        </tr>
+        <tr align="center">
+          <td>3</td>
+          <td>Job Paiva</td>
+          <td>18</td>
+          <td>Programador</td>
+          <td>job423@gmail.com</td>
+          <td>923353419</td>
+          <td>
+            <button>Detalhes</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+</body>
+</html>

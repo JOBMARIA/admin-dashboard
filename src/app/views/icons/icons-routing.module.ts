@@ -7,7 +7,7 @@ const routes: Routes = [
   {
     path: '',
     data: {
-      title: 'Icons'
+      title: 'Funcionarios'
     },
     children: [
       {

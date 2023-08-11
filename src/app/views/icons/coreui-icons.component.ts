@@ -5,12 +5,18 @@ import { IconSetService } from '@coreui/icons-angular';
 import { brandSet, flagSet, freeSet } from '@coreui/icons';
 
 @Component({
+  selector: 'app-coreui-icons',
   templateUrl: 'coreui-icons.component.html',
   providers: [IconSetService],
 })
 export class CoreUIIconsComponent implements OnInit {
   public title = 'CoreUI Icons';
   public icons!: [string, string[]][];
+  pessoas = [
+    { nome: 'João', idade: 25 },
+    { nome: 'Maria', idade: 30 },
+    { nome: 'Pedro', idade: 22 },
+  ];
 
   constructor(
     private route: ActivatedRoute, public iconSet: IconSetService
